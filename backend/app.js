@@ -8,6 +8,7 @@ const authRoute = require("./routes/auth");
 app.use(cors());
 app.use(bodyParser.json());
 app.use(authRoute);
+app.use(UserRoute);
 
 app.all("*", (req, res, next) => {
   const err = new Error(`Can't find ${req.originalUrl} on this server!`);
