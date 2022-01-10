@@ -3,11 +3,15 @@ const cors = require("cors");
 const app = express();
 const bodyParser = require("body-parser");
 const authRoute = require("./routes/auth");
+const expenseRoute = require("./routes/expense");
+
+const  UserRoute = require("./routes/User");
 
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(authRoute);
+app.use(expenseRoute);
 app.use(UserRoute);
 
 app.all("*", (req, res, next) => {
