@@ -4,14 +4,14 @@ const app = express();
 const bodyParser = require("body-parser");
 const authRoute = require("./routes/auth");
 const expenseRoute = require("./routes/expense");
-
 const  UserRoute = require("./routes/User");
-
+const  LimitRoute = require("./routes/Limits");
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(authRoute);
 app.use(expenseRoute);
+app.use(LimitRoute);
 app.use(UserRoute);
 
 app.all("*", (req, res, next) => {
