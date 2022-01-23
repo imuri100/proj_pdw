@@ -79,7 +79,6 @@ const GlobalError = require("../utils/globalError");
                 Categoria: newCategoria,
               },
             });
-            //console.log(newCategoria)
           }                 
   });
   

@@ -122,7 +122,7 @@ exports.ImportExpense = catchAsync(async (req, res, next) => {
 });
 
 exports.UploadImage = catchAsync(async (req, res, next) => { 
-  //console.log(req)
+  console.log(req)
   const ExpenseID = req.body.id;           //Id da Expense
   const Owner = req.user._id               //Id do User
   const nome = req.file.originalname       //nome do ficheiro

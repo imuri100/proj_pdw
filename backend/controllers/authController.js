@@ -120,8 +120,16 @@ exports.forgot = catchAsync(async (req, res, next) => {
 
   const url = "http://localhost:8000/reset/${token}";
 
-  await transporter.sendMail({
-     from: "admin@example.com",
+   var transporter = nodemailer.createTransport({
+    service: 'Outlook365',
+    auth: {
+      user: '',
+      pass: ''
+    }
+   });
+
+   transporter.sendMail({
+     from: "domingosfernandes_@hotmail.com",
      to: email,
      subject: "reset your password!",
      html: "Click <a href= ${url} >here</a> "

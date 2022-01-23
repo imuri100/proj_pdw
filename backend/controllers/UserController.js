@@ -1,8 +1,6 @@
 const User = require("../models/user");
 const catchAsync = require("../utils/catchAsync");
 const GlobalError = require("../utils/globalError");
-const PasswordReset = require("../models/passwordReset")
-const bcrypt = require("bcryptjs/dist/bcrypt");
 
 exports.UpdateUser = catchAsync(async (req, res, next) => {
     //console.log(req)
