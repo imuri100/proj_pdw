@@ -1,0 +1,13 @@
+.div {
+    margin: 2rem 2rem 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    > button {
+        display: block;
+        margin-bottom: 1rem;
+        margin-left: auto;
+    }
+}

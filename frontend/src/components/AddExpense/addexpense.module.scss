@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+    margin: 3rem auto 0;
+
+    h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    input,
+    button,
+    select {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    input:not(:last-child),
+    select {
+        margin-bottom: 0.5rem;
+    }
+}

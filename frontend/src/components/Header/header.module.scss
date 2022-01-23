@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(224, 220, 220, 0.36);
+    padding: 1rem 2rem;
+
+    h3 {
+        align-self: center;
+    }
+
+    svg {
+        border: 1px black solid;
+        border-radius: 50px;
+    }
+
+    button {
+        color: black;
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: black !important;
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    }
+}
